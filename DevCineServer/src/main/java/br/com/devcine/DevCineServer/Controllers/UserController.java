@@ -38,6 +38,21 @@ public class UserController {
     return ResponseEntity.status(200).body(userCreated);
   }
 
+  @PostMapping("/login")
+  public ResponseEntity<?> login(@RequestBody UserModel userModel) {
+    var user = this.userRepository.findByUsername(userModel.getUsername());
+
+    if(user == null) {
+      return ResponseEntity.status(400).body("Usuário não existe");
+    }
+
+    if(BCrypt.verifyer().verify(userModel.getPassword().toCharArray(), user.getPassword()).verified) {
+      return ResponseEntity.status(200).body("Login bem sucedido!");
+    } else {
+      return ResponseEntity.status(400).body("Credenciais inválidas");
+    }
+  }
+
   @GetMapping("/")
   public List<UserModel> list() {
     var users = this.userRepository.findAll();
