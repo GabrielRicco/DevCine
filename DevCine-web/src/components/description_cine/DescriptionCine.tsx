@@ -5,11 +5,11 @@ interface IDescriptionProps {
 
 }
 
-const DescriptionCine = (props: IDescriptionProps): React.ReactElement => {
+export function DescriptionCine (props: IDescriptionProps): React.ReactElement  {
     console.log(props)
     
     return(
-        <div>
+        <div className="DescriptionText">
             <h1>Bem-vindo à nossa Locadora de Filmes Online, onde a magia do cinema encontra a conveniência do streaming!</h1>
                 <p>Explore um vasto catálogo de filmes que abrange desde clássicos intemporais até os lançamentos mais recentes,<br/>
                 tudo na ponta dos seus dedos. Desfrute da emoção de uma noite de cinema sem sair de casa, escolhendo entre uma variedade de gêneros e descobrindo novos favoritos a cada clique.<br/>
@@ -18,4 +18,3 @@ const DescriptionCine = (props: IDescriptionProps): React.ReactElement => {
         </div>
     )
 }
-export {DescriptionCine}

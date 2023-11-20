@@ -1,2 +1,2 @@
-import { LogoCine } from "./LogoCine";
+import {LogoCine} from './LogoCine'
 export {LogoCine}

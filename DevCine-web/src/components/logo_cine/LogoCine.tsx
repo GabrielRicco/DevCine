@@ -1,4 +1,5 @@
 import React from "react";
+import imagemlogo  from './assets/imagemlogo.png';
 
 interface LogoCineProps{
   src: string;       // Caminho da imagem
@@ -11,8 +12,8 @@ interface LogoCineProps{
 const LogoCine = (props: LogoCineProps): React.ReactElement => {
     console.log(props)
     return(
-        <div style={{ display: 'flex' }}>
-            <img src= '\assets\cinema.png' alt="imagem teste de cinema" />
+        <div className='LogoCine' style={{ display: 'flex' }}>
+            <img src={imagemlogo} alt="imagem teste" />
 
         </div>
     )

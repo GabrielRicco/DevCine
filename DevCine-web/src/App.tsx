@@ -5,9 +5,10 @@ export function App() {
 
   return (
     <>
-    <h1>Hello World</h1>
-    <LogoCine src="caminho-da-imagem" alt="Logo do site"/>
+    <div>
+    <LogoCine src='teste' alt="Logo do site"/>
     <DescriptionCine className=""/>
+    </div>
     </>
   )
 }
