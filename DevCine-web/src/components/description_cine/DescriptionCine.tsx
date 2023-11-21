@@ -5,7 +5,7 @@ interface IDescriptionProps {
 
 }
 
-export function DescriptionCine (props: IDescriptionProps): React.ReactElement  {
+const  DescriptionCine = (props: IDescriptionProps): React.ReactElement => {
     console.log(props)
     
     return(
@@ -18,3 +18,4 @@ export function DescriptionCine (props: IDescriptionProps): React.ReactElement  
         </div>
     )
 }
+export {DescriptionCine}

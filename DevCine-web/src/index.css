@@ -39,3 +39,24 @@ body{
     /* Adicione outras propriedades de estilo conforme necessário */
 
 }
+
+/* propriedade GridCine*/
+.movies{
+    flex: 1;
+  margin: 20px;
+  margin-top: 30%; /* Ajuste esta propriedade conforme necessário */
+  padding: 20px;
+  background-color: #e7dddd;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Ajuste conforme necessário */
+  gap:20px
+}
+.item{
+    flex: 0 0 calc(33.333% - 20px); /* 20px é a margem entre os itens, ajuste conforme necessário */
+    margin: 10px;
+    padding: 20px;
+    background-color: #e7dddd;
+    text-align: center; /*centralizando texto dos filmes*/
+}
