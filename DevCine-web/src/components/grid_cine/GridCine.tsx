@@ -4,7 +4,7 @@ import Grid from '@mui/material/Grid';
 import Paper from '@mui/material/Paper';
 import Typography from '@mui/material/Typography';
 import ButtonBase from '@mui/material/ButtonBase';
-import ButtonUsage from '../button_alugar_cine/ButtonAlugarCine';
+import ButtonAlugarCine from '../button_alugar_cine/ButtonAlugarCine';
 
 const Img = styled('img')({
   margin: 'auto',
@@ -23,7 +23,7 @@ export default function GridCine() {
         maxWidth: 500,
         flexGrow: 1,
         backgroundColor: (theme) =>
-          theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+          theme.palette.mode === 'dark' ? '#1A2027' : '#bb0b0b',
       }}
     >
       <Grid container spacing={2}>
@@ -35,17 +35,17 @@ export default function GridCine() {
         <Grid item xs={12} sm container>
           <Grid item xs container direction="column" spacing={2}>
             <Grid item xs>
-              <Typography gutterBottom variant="subtitle1" component="div">
+              <Typography gutterBottom variant="subtitle1" component="div" color={'white'}>
                 WISH <br/>o poder dos desejos
               </Typography>
             </Grid>
             <Grid item>
-              <Typography sx={{ cursor: 'pointer' }} variant="body2" /><ButtonUsage/> 
+              <Typography sx={{ cursor: 'pointer' }} variant="body2" fontSize={16}/><ButtonAlugarCine/> 
   
             </Grid>
           </Grid>
           <Grid item>
-            <Typography variant="subtitle1" component="div">
+            <Typography variant="subtitle1" component="div"  color={'white'}>
               R$19,99
             </Typography>
           </Grid>
@@ -60,7 +60,7 @@ export default function GridCine() {
     maxWidth: 500,
     flexGrow: 1,
     backgroundColor: (theme) =>
-        theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+        theme.palette.mode === 'dark' ? '#1A2027' : '#bb0b0b',
     }}
     >
     <Grid container spacing={2}>
@@ -72,17 +72,17 @@ export default function GridCine() {
     <Grid item xs={12} sm container>
         <Grid item xs container direction="column" spacing={2}>
         <Grid item xs>
-            <Typography gutterBottom variant="subtitle1" component="div">
+            <Typography gutterBottom variant="subtitle1" component="div" color={'white'}>
             Percy Jackson e os olimpianos <br/> o mar de monstross
             </Typography>
         </Grid>
         <Grid item>
-            <Typography sx={{ cursor: 'pointer' }} variant="body2" /><ButtonUsage/> 
+            <Typography sx={{ cursor: 'pointer' }} variant="body2" /><ButtonAlugarCine/> 
 
         </Grid>
         </Grid>
         <Grid item>
-        <Typography variant="subtitle1" component="div">
+        <Typography variant="subtitle1" component="div" color={'white'}>
             R$19,99
         </Typography>
         </Grid>
@@ -97,7 +97,7 @@ export default function GridCine() {
     maxWidth: 500,
     flexGrow: 1,
     backgroundColor: (theme) =>
-        theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+        theme.palette.mode === 'dark' ? '#1A2027' : '#bb0b0b',
     }}
     >
     <Grid container spacing={2}>
@@ -109,17 +109,17 @@ export default function GridCine() {
     <Grid item xs={12} sm container>
         <Grid item xs container direction="column" spacing={2}>
         <Grid item xs>
-            <Typography gutterBottom variant="subtitle1" component="div">
+            <Typography gutterBottom variant="subtitle1" component="div" color={'white'}>
             Encanto
             </Typography>
         </Grid>
         <Grid item>
-            <Typography sx={{ cursor: 'pointer' }} variant="body2" /><ButtonUsage/> 
+            <Typography sx={{ cursor: 'pointer' }} variant="body2" /><ButtonAlugarCine/> 
 
         </Grid>
         </Grid>
         <Grid item>
-        <Typography variant="subtitle1" component="div">
+        <Typography variant="subtitle1" component="div" color={'white'}>
             R$19,99
         </Typography>
         </Grid>
@@ -134,7 +134,7 @@ export default function GridCine() {
     maxWidth: 500,
     flexGrow: 1,
     backgroundColor: (theme) =>
-        theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+        theme.palette.mode === 'dark' ? '#1A2027' :'#bb0b0b',
     }}
     >
     <Grid container spacing={2}>
@@ -146,17 +146,17 @@ export default function GridCine() {
     <Grid item xs={12} sm container>
         <Grid item xs container direction="column" spacing={2}>
         <Grid item xs>
-            <Typography gutterBottom variant="subtitle1" component="div">
+            <Typography gutterBottom variant="subtitle1" component="div" color={'white'}>
             Jogos Vorazes <br/> 1
             </Typography>
         </Grid>
         <Grid item>
-            <Typography sx={{ cursor: 'pointer' }} variant="body2" /><ButtonUsage/> 
+            <Typography sx={{ cursor: 'pointer' }} variant="body2" /><ButtonAlugarCine/> 
 
         </Grid>
         </Grid>
         <Grid item>
-        <Typography variant="subtitle1" component="div">
+        <Typography variant="subtitle1" component="div" color={'white'}>
             R$19,99
         </Typography>
         </Grid>
@@ -171,7 +171,7 @@ export default function GridCine() {
     maxWidth: 500,
     flexGrow: 1,
     backgroundColor: (theme) =>
-        theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+        theme.palette.mode === 'dark' ? '#1A2027' : '#bb0b0b',
     }}
     >
     <Grid container spacing={2}>
@@ -183,17 +183,17 @@ export default function GridCine() {
     <Grid item xs={12} sm container>
         <Grid item xs container direction="column" spacing={2}>
         <Grid item xs>
-            <Typography gutterBottom variant="subtitle1" component="div">
+            <Typography gutterBottom variant="subtitle1" component="div" color={'white'}>
             A menina que roubava livros 
             </Typography>
         </Grid>
         <Grid item>
-            <Typography sx={{ cursor: 'pointer' }} variant="body2" /><ButtonUsage/> 
+            <Typography sx={{ cursor: 'pointer' }} variant="body2" /><ButtonAlugarCine/> 
 
         </Grid>
         </Grid>
         <Grid item>
-        <Typography variant="subtitle1" component="div">
+        <Typography variant="subtitle1" component="div" color={'white'}>
             R$19,99
         </Typography>
         </Grid>
@@ -208,7 +208,7 @@ export default function GridCine() {
     maxWidth: 500,
     flexGrow: 1,
     backgroundColor: (theme) =>
-        theme.palette.mode === 'dark' ? '#1A2027' : '#fff',
+        theme.palette.mode === 'dark' ? '#1A2027' :'#bb0b0b',
     }}
     >
     <Grid container spacing={2}>
@@ -220,17 +220,17 @@ export default function GridCine() {
     <Grid item xs={12} sm container>
         <Grid item xs container direction="column" spacing={2}>
         <Grid item xs>
-            <Typography gutterBottom variant="subtitle1" component="div">
+            <Typography gutterBottom variant="subtitle1" component="div" color={'white'}>
             O pequeno príncipe
             </Typography>
         </Grid>
         <Grid item>
-            <Typography sx={{ cursor: 'pointer' }} variant="body2" /><ButtonUsage/> 
+            <Typography sx={{ cursor: 'pointer' }} variant="body2" /><ButtonAlugarCine/> 
 
         </Grid>
         </Grid>
         <Grid item>
-        <Typography variant="subtitle1" component="div">
+        <Typography variant="subtitle1" component="div" color={'white'}>
             R$19,99
         </Typography>
         </Grid>

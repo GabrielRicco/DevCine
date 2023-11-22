@@ -6,9 +6,8 @@
     position: absolute;
     top: 45%;
     left: 40%;
-    color: rgb(204, 210, 216);
+    color: rgb(220, 224, 228);
     transform: translate(-90%, -100%);
-    background-color: #ff393684;
     padding: 15px; /* Ajuste o preenchimento conforme necessário */
     max-width: 40%; /* Define a largura máxima como metade da tela */
     border-radius: 15px;
@@ -19,10 +18,10 @@
 }
 .DescriptionText p{
     font-family: 'Roboto+Mono';
-    font-size: 130%;
+    font-size: 150%;
 }
 body{
-    background: linear-gradient(to bottom, rgba(190, 41, 41, 0.685), black);
+    background:#313030;
     margin: 0; /* Certifique-se de remover as margens padrão do corpo */
     height: 100vh; /* Ajusta a altura para ocupar toda a tela */
     display: flex;
@@ -46,17 +45,38 @@ body{
   margin: 20px;
   margin-top: 30%; /* Ajuste esta propriedade conforme necessário */
   padding: 20px;
-  background-color: #e7dddd;
   text-align: center;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; /* Ajuste conforme necessário */
-  gap:20px
+  gap:20px;
+ 
 }
 .item{
     flex: 0 0 calc(33.333% - 20px); /* 20px é a margem entre os itens, ajuste conforme necessário */
     margin: 10px;
     padding: 20px;
-    background-color: #e7dddd;
     text-align: center; /*centralizando texto dos filmes*/
+}
+
+.devolveFilme{
+    padding: 8px 16px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-sizing: border-box;
+    cursor: pointer;
+    font-family: "Roboto","Helvetica","Arial",sans-serif;
+    font-weight: 500;
+    font-size: 0.875rem;
+    line-height: 1.45;
+    letter-spacing: 0.02857em;
+    text-transform: uppercase;
+    min-width: 60px;
+    padding: 6px 10px;
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
+    gap: 20px;
+    flex-wrap: wrap;
 }

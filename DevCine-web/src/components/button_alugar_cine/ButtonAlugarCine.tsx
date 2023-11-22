@@ -1,8 +1,11 @@
 import * as React from 'react';
 import { Button } from "@mui/material";
 
-export default function ButtonUsage(){
+export default function ButtonAlugarCine(){
     return(
-        <Button variant="contained">Alugar filme</Button>
+        <div>
+        <Button variant="contained" color="success">Alugar filme</Button>
+        <button className='devolveFilme'>Devolver Filme</button>
+        </div>
     ) 
 }
