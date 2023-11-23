@@ -5,6 +5,7 @@ import java.util.UUID;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -66,6 +67,13 @@ public class MovieController {
     return movies;
   }
 
+  @GetMapping("/notRented")
+  public List<MovieModel> listNotRented() {
+    var movies = this.movieRepository.findByRented(false);
+
+    return movies;
+  }
+
   @GetMapping("/{userId}")
   public List<MovieModel> listByUser(@PathVariable UUID userId) {
     UserModel user = new UserModel();
@@ -74,5 +82,18 @@ public class MovieController {
     var movies = this.movieRepository.findByUser(user);
 
     return movies;
+  }
+
+  @DeleteMapping("/{id}")
+  public ResponseEntity<?> delete(@PathVariable UUID id) {
+    var movie = this.movieRepository.findById(id).orElse(null);
+
+    if(movie == null) {
+      return ResponseEntity.status(400).body("Filme não encontrado");
+    }
+
+    this.movieRepository.delete(movie);
+
+    return ResponseEntity.status(200).body("Filme deletado com sucesso!");
   }
 }
