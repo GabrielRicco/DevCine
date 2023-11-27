@@ -47,7 +47,7 @@ public class UserController {
     }
 
     if(BCrypt.verifyer().verify(userModel.getPassword().toCharArray(), user.getPassword()).verified) {
-      return ResponseEntity.status(200).body("Login bem sucedido!");
+      return ResponseEntity.status(200).body(user);
     } else {
       return ResponseEntity.status(400).body("Credenciais inválidas");
     }
