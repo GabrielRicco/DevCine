@@ -60,6 +60,13 @@ public class MovieController {
     return movies;
   }
 
+  @GetMapping("/movie/{id}")
+  public ResponseEntity<?> listById(@PathVariable UUID id) {
+    var movie = this.movieRepository.findById(id);
+
+    return ResponseEntity.status(200).body(movie);
+  }
+
   @GetMapping("/rented")
   public List<MovieModel> listRented() {
     var movies = this.movieRepository.findByRented(true);
