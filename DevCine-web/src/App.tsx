@@ -1,16 +1,11 @@
-
-import CadastroLoginCine from "./pages/cadastro_login_cine/CadastroLoginCine";
-
+import { BrowserRouter } from "react-router-dom";
+import { Router } from "./Routes";
 
 export function App() {
-
-
   return (
-    <>
-   
-      <CadastroLoginCine/>
-      
-    </>
+    <BrowserRouter>
+      <Router />
+    </BrowserRouter>
   )
 }
 

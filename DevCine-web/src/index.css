@@ -1,82 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto+Mono:ital,wght@0,400;1,300&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
-
-/*propriedades do componente descrição*/
-.DescriptionText{
-    margin-top: 6%;
-    position: absolute;
-    top: 45%;
-    left: 40%;
-    color: rgb(220, 224, 228);
-    transform: translate(-90%, -100%);
-    padding: 15px; /* Ajuste o preenchimento conforme necessário */
-    max-width: 40%; /* Define a largura máxima como metade da tela */
-    border-radius: 15px;
-    
-}
-.DescriptionText h1{
-    font-family: 'Ubuntu' ;
-}
-.DescriptionText p{
-    font-family: 'Roboto+Mono';
-    font-size: 150%;
-}
-body{
-    background:#313030;
-    margin: 0; /* Certifique-se de remover as margens padrão do corpo */
-    height: 100vh; /* Ajusta a altura para ocupar toda a tela */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white; /* Ajuste a cor do texto conforme necessário */
-}
-
-/*Propriedades da LogoCine*/
-.LogoCine{
-    position: absolute;
-    top: -100px; /* Ajuste conforme necessário para a margem superior desejada */
-    right: -2px; /* Ajuste conforme necessário para a margem direita desejada */
-    /* Adicione outras propriedades de estilo conforme necessário */
-
-}
-
-/* propriedade GridCine*/
-.movies{
-    flex: 1;
-  margin: 20px;
-  margin-top: 30%; /* Ajuste esta propriedade conforme necessário */
-  padding: 20px;
-  text-align: center;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around; /* Ajuste conforme necessário */
-  gap:20px;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
  
+@layer base {
+  :root {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+    --primary: 0 72.2% 50.6%;
+    --primary-foreground: 0 85.7% 97.3%;
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+    --accent: 0 0% 14.9%;
+    --accent-foreground: 0 0% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 72.2% 50.6%;
+  }
 }
-.item{
-    flex: 0 0 calc(33.333% - 20px); /* 20px é a margem entre os itens, ajuste conforme necessário */
-    margin: 10px;
-    padding: 20px;
-    text-align: center; /*centralizando texto dos filmes*/
-}
-
-.devolveFilme{
-    padding: 8px 16px;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    box-sizing: border-box;
-    cursor: pointer;
-    font-family: "Roboto","Helvetica","Arial",sans-serif;
-    font-weight: 500;
-    font-size: 0.875rem;
-    line-height: 1.45;
-    letter-spacing: 0.02857em;
-    text-transform: uppercase;
-    min-width: 60px;
-    padding: 6px 10px;
-    border-radius: 4px;
-    box-shadow: 0px 3px 1px -2px rgba(0,0,0,0.2), 0px 2px 2px 0px rgba(0,0,0,0.14), 0px 1px 5px 0px rgba(0,0,0,0.12);
-    gap: 20px;
-    flex-wrap: wrap;
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
